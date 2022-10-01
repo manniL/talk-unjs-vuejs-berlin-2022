@@ -5,6 +5,7 @@ export default defineShortcutsSetup((nav, defaultShortcuts) => {
   defaultShortcuts.splice(hideIndex, 1)
 
   return [
+    ...defaultShortcuts,
     {
       key: 'Escape',
       fn: () => nav.toggleOverview(),

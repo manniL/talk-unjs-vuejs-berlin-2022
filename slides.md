@@ -69,17 +69,17 @@ layout: intro
 
 <br><br>
 
-<div class="flex mt-8 justify-around">
+<div class="flex flex mt-8 justify-around">
+<VClicks>
 
 <img src="/firefox.png" class="w-24" alt="Firefox Developer Edition Logo">
 <img src="https://nodejs.org/static/images/logo.svg" class="w-32" alt="Firefox Developer Edition Logo">
 
-</div>
-
-<div class="flex mt-16 justify-around">
+<img src="https://deno.land/logo.svg?__frsh_c=2y6shjpc605g" class="w-24" alt="Deno Logo">
 
 <img src="/cf-workers.svg" class="w-64 text-white fill-current" alt="Cloudflare Workers Logo">
 
+</VClicks>
 </div>
 
 ---
@@ -87,12 +87,37 @@ layout: intro
 
 # Nuxt 2 and Nuxt 3 -> external packages
 # Why? (Easier to test, can be reused)
+
+---
+
 # Let's take a look
-# Ufo
+
+<img v-click class="mx-auto max-w-full h-90" src="/unjs-website.png"/>
+
+---
+
+# 👽️ ufo - URL utils for humans
+
+
+
+---
+
 # Defu
+
+---
+
 # Destr
-# Ohmyfetch
+
+---
+
+# ohmyfetch
+
+---
+
 # H3
+
+---
+
 # Nitro
 
 ---
