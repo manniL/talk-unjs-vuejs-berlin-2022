@@ -83,10 +83,51 @@ layout: intro
 </div>
 
 ---
+clicks: 5
+---
+
+# Using NPM packages "out of the box"...
+
+...becomes more difficult
+
+<VClicks>
+
+* Ideally any package supports... 
+* CJS (legacy)
+* ESM
+* running via Deno
+
+</VClicks>
+
+<Code v-click="2">
+
+```js{1|3|5|all} {at:2}
+const { someFunction, someOtherVariable } = require('my-lib')
+
+import { someFunction, someOtherVariable } from 'my-lib'
+
+import { someFunction, someOtherVariable } from 'https://unpkg.com/my-lib/dist/index.mjs'
+```
+
+</Code>
+
+<!--
+
+And also: Writing and maintaing these packages!
+
+-->
+
+
+
+---
 
 
 # Nuxt 2 and Nuxt 3 -> external packages
 # Why? (Easier to test, can be reused)
+
+---
+
+
 
 ---
 
@@ -152,14 +193,90 @@ Typically, we choose one or more data storages based on our use-cases like a fil
 
 ---
 
-# H3 - Minimal h(ttp) framework
+# ⚡️ H3 - Minimal h(ttp) framework
 
-* Portable: Works perfectly in Serverless, Workers, and Node.js
-* Compatible: Support connect/express middleware
-* Minimal: Small, tree-shakable and zero-dependency
-* Modern: Native promise support
-* Extendable: Ships with a set of composable utilities but can be extended
-* Router: Super fast route matching using unjs/radix3
+---
+
+# H3 - Why another framework?
+
+<VClicks class="mt-16">
+
+* There are so many existing http frameworks for node.js already
+* connect
+* express
+* fastify
+* koa
+* hapi.js
+* and more...
+
+</VClicks>
+
+---
+
+# H3 - Why another framework?
+
+<VClicks class="mt-16">
+
+* H3 is...
+* ...platform-agnostic
+* ...compatible with existing stacks
+* ...minimal
+* ...modern
+* ...extendable
+* ...coming with a built-in router
+
+</VClicks>
+
+<!--
+* ...platform-agnostic: Works perfectly in Serverless, Workers, and Node.js
+* ...compatible with existing stacks: supports connect and express middleware
+* ...minimal: Tiny and tree-shakable
+* ...modern: Native promise support
+* ...extendable: Ships with a set of composable utilities but can be extended
+* ...coming with a built-in router: Super fast route matching using unjs/radix3
+
+-->
+
+---
+
+# H3 - An example
+
+```js{0|2-4|2-6|2-7|2-8|2-10|1,4,12|all}
+import { listen } from 'listhen'
+import { createApp, createRouter } from 'h3'
+
+const app = createApp()
+
+const router = createRouter()
+  .get('/', () => 'Hallo Berlin!')
+  .get('/color/:color', (event) => `I like ${event.context.params.color}!`)
+
+app.use(router)
+
+listen(app)
+```
+
+<VClicks>
+
+* [Check it out!](https://stackblitz.com/edit/h3-starter?file=package.json,index.js)
+
+</VClicks>
+
+---
+
+# H3 - Used by (just a few examples)
+
+<VClicks>
+
+* [Nitro(pack)](https://github.com/unjs/nitro) - We will have a look next!
+* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
+* [GestaltJS](https://github.com/gestaltjs/gestalt) - "A modern full-stack and batteries-included framework"
+* [serve](https://github.com/nmathew98/serve) - "A lightweight starting point for API applications"
+* [frourio-h3](https://github.com/SegaraRai/frourio-unofficial-h3) - An unofficial port of the full-stack TS framework
+
+</VClicks>
+
+
 ---
 
 # Nitro
