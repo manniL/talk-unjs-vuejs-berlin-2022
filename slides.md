@@ -268,7 +268,7 @@ listen(app)
 
 <VClicks>
 
-* [Nitro(pack)](https://github.com/unjs/nitro) - We will have a look next!
+* [Nitro(pack)](https://github.com/unjs/nitro) - We will have a look at it next!
 * [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
 * [GestaltJS](https://github.com/gestaltjs/gestalt) - "A modern full-stack and batteries-included framework"
 * [serve](https://github.com/nmathew98/serve) - "A lightweight starting point for API applications"
@@ -287,8 +287,15 @@ listen(app)
 
 # Outro
 
-* 
-* 
+<VClicks>
+
+* Picking an NPM package that supports (almost) all platforms is **not easy** <sup class="text-[0.5rem]">Writing and maintaining these too</sup>
+* Extracting isolated features helps maintainability and reusability throughout the ecosystem
+* `unjs` packages power not only Nuxt, but also many other frameworks and can be used **for your app too**!
+* TODO
+
+</VClicks>
+ 
 
 ---
 
