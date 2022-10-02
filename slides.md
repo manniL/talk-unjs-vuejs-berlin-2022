@@ -264,7 +264,7 @@ listen(app)
 
 ---
 
-# H3 - Used by (just a few examples)
+# H3 - Used by
 
 <VClicks>
 
@@ -281,7 +281,22 @@ listen(app)
 
 # Nitro
 
-* 
+* TODO
+
+---
+
+# Nitro - Used by
+
+<VClicks>
+
+* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/)
+  * and any project built with Nuxt 3
+* [stacks.js](https://github.com/stacksjs/stacks) - "A progressive, atomic full-stack framework"
+* [vitejs/rfcs-bot](https://github.com/vitejs/rfcs-bot) - "Automation of RFCs creation for vitejs/rfcs"
+* [issues-up](https://github.com/antfu/issue-up/tree/main) - "Mirror issues to the upstream repos"
+* [jjw-proxy](https://github.com/jonathanjameswatson/jjw-proxy) - "Customisable Cloudflare Workers proxy"
+
+</VClicks>
 
 ---
 
