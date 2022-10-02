@@ -99,26 +99,72 @@ layout: intro
 # 👽️ ufo - URL utils for humans
 
 
+---
+
+# 🧵 scule - String case utils ?
+
+* PascalCase
+* camelCase
+* kebab-case
+* snake-case
+* Upperfirst
+* lowerfirst
+* splitByCase 
 
 ---
 
 # Defu
 
----
-
-# Destr
 
 ---
 
 # ohmyfetch
 
+* Universal wrapper around `fetch`
+* Usable with Node (polyfill, native, or undici)
+* As well as in the browser and in workers!
+
 ---
 
-# H3
+# 🌍💾 unstorage - Universal Storage Layer
 
+* Powerful universal storage layer
+* Unified API, < 5 kB
+* Supports in-memory, filesystem, localstorage, redis and HTTP
+* As well as GitHub repositories (read-only) and Cloudflare's KV-store via http and bindings
+* Can be extended by creating custom drivers too!
+* And be used as storage server too with ease
+
+Notes:
+* https://github.com/dishait/file-computed/ ?
+* Combine stores if wanted
+* 
+
+<!-- 
+
+localforage: 28.9 kB
+
+Typically, we choose one or more data storages based on our use-cases like a filesystem, a database like Redis, Mongo, or LocalStorage for browsers but it will soon start to be lots of trouble for supporting and combining more than one or switching between them. For javascript library authors, this usually means they have to decide how many platforms they support and implement storage for each.
+
+💡 Unstorage solution is a unified and powerful Key-Value (KV) interface that allows combining drivers that are either built-in or can be implemented via a super simple interface and adding conventional features like mounting, watching, and working with metadata.
+
+-->
+
+---
+
+# H3 - Minimal h(ttp) framework
+
+* Portable: Works perfectly in Serverless, Workers, and Node.js
+* Compatible: Support connect/express middleware
+* Minimal: Small, tree-shakable and zero-dependency
+* Modern: Native promise support
+* Extendable: Ships with a set of composable utilities but can be extended
+* Router: Super fast route matching using unjs/radix3
 ---
 
 # Nitro
+
+* 
 
 ---
 
