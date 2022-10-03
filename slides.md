@@ -145,7 +145,7 @@ And also: Writing and maintaining these packages!
 
 # `nuxt-contrib`
 
-<img src="/nuxt-contrib.png" alt="Screenshot of the nuxt-contrib GitHub org">
+<img src="/nuxt-contrib.png" class="opacity-75" alt="Screenshot of the nuxt-contrib GitHub org">
 
 ---
 
@@ -165,6 +165,16 @@ layout: intro
 ---
 
 # `unjs`
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png?20120221235433" class="mx-auto mt-8 w-32"  alt="Logo of JavaScript">
+
+---
+layout: intro
+---
+
+# `unjs`
+
+<img src="https://avatars.githubusercontent.com/u/80154025" class="mx-auto mt-8 w-32"  alt="Logo of unjs">
 
 ---
 
@@ -402,4 +412,5 @@ layout: intro
 
 # Slides / Repo
 
-## TODO
+* Slides: [https://lichter.link/vuejs-de-2022-slides/](https://lichter.link/vuejs-de-2022-slides/)
+* Repo: [https://lichter.link/vuejs-de-2022-repo/](https://lichter.link/vuejs-de-2022-repo/)
