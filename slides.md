@@ -83,12 +83,10 @@ layout: intro
 </div>
 
 ---
-clicks: 6
+clicks: 5
 ---
 
-# Using NPM packages "out of the box"...
-
-...becomes more difficult
+# Picking NPM packages becomes more difficult
 
 <VClicks>
 
@@ -118,24 +116,54 @@ And also: Writing and maintaining these packages!
 
 ---
 
-# Requirements can change
-
-* What if you change the platform you deploy to?
-  * e.g. from a docker container into lambdas or workers
-* What if you need a specific package that should work for SSR too?
-* 
-
+# Software requirements can change
 
 ---
 
----
-
-# Nuxt 2 development
+# Software requirements ~~can~~ will change
 
 <VClicks>
 
-* Features and functionalities were developed
-* At first coupled to the core
+* What if you change the platform you deploy to?
+  * e.g. from a docker container into lambdas or workers
+* What if you decide to utilize SSR?
+  * and which packages break now 👀
+
+</VClicks>
+
+---
+
+# "The solution"
+
+<VClicks>
+
+* Use "modern" packages
+* Ideally those who are universally usable
+* With as little sub-dependencies as possible
+* And who support all "common" formats
+
+</VClicks>
+
+---
+layout: cover
+background: https://media0.giphy.com/media/26n6WywJyh39n1pBu/giphy.gif
+---
+---
+layout: cover
+background: https://media1.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif
+---
+---
+layout: cover
+background: https://media2.giphy.com/media/DMC9w6MPUXYv9Yts49/giphy.gif
+---
+---
+
+# During Nuxt 2 development
+
+<VClicks>
+
+* Features and functionalities were introduced
+* At first - more or less coupled to the core
 * "Nuxt-related" logic -> extracted as Nuxt module
 * "General" logic -> extracted as NPM package
 
@@ -312,7 +340,7 @@ Typically, we choose one or more data storages based on our use-cases like a fil
 
 ---
 
-# H3 - An example
+# H3 - Usage
 
 ```js{0|2-4|2-6|2-7|2-8|2-10|1,4,12|all}
 import { listen } from 'listhen'
@@ -467,7 +495,6 @@ layout: intro
 # Thanks a lot to my sponsors!
 
 <img src="/sponsors.svg" class="h-70 mx-auto" alt="My GitHub sponsors">
-
 
 ---
 layout: intro
