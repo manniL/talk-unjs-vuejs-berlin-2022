@@ -83,7 +83,7 @@ layout: intro
 </div>
 
 ---
-clicks: 5
+clicks: 6
 ---
 
 # Using NPM packages "out of the box"...
@@ -96,6 +96,7 @@ clicks: 5
 * CJS (legacy)
 * ESM
 * running via Deno
+* TS and provides own types
 
 </VClicks>
 
@@ -114,6 +115,18 @@ import { someFunction, someOtherVariable } from 'https://unpkg.com/my-lib/dist/i
 <!--
 And also: Writing and maintaining these packages!
 -->
+
+---
+
+# Requirements can change
+
+* What if you change the platform you deploy to?
+  * e.g. from a docker container into lambdas or workers
+* What if you need a specific package that should work for SSR too?
+* 
+
+
+---
 
 ---
 
@@ -360,19 +373,60 @@ listen(app)
 
 ---
 
+# And there are way more packages
+
+<VClicks>
+
+* We saw some during the examples already. And in addition:
+* `unplugin` - Unified plugin system for all major bundlers (Vite, Rollup, Webpack, esbuild)
+* `untyped` - Generate types and markdown from a config object
+* `consola` - Beautiful universal console logger
+* `hookable` - Async hook system
+* ...and way more! Check out the [GitHub organisation](https://github.com/unjs)
+
+</VClicks>
+
+---
+
+# Contributors
+
+<VClicks>
+
+* When you browse around the `unjs` organization, you will see these images quite often:
+
+<div class="w-full flex justify-around my-8">
+  <img class="rounded-full h-40" src="https://avatars.githubusercontent.com/u/11247099" alt="Anthony Fu">
+  <img class="rounded-full h-40" src="https://avatars.githubusercontent.com/u/28706372" alt="Daniel Roe">
+  <img class="rounded-full h-40" src="https://avatars.githubusercontent.com/u/5158436" alt="Pooya Parsa">
+</div>
+
+* But also lots of other individual contributors of each project!
+
+</VClicks>
+
+<div class="text-5xl text-center mt-12" v-click>
+
+Thanks to all of them 👏🏻👏🏻👏🏻
+
+</div>
+
+---
+
 # Outro
 
 <VClicks>
 
 * Picking an NPM package that supports (almost) all platforms is **not easy** <sup class="text-[0.5rem]">Writing and maintaining these too</sup>
 * Extracting isolated features helps maintainability and reusability throughout the ecosystem
-* `unjs` packages power not only Nuxt, but also many other frameworks and can be used **for your app too**!
-* TODO
+* `unjs` packages power not only Nuxt, but also many other frameworks...
+  * ...and can be used **for your app too**!
 
 </VClicks>
- 
 
----
+<div class="flex justify-around items-center w-2/3 mx-auto mt-8" v-click>
+<span class="text-3xl">Hacktoberfest 22 is on!</span>
+<img v-click class="ml-16 w-48 rounded-full" src="/hacktoberfest.jpg" alt="Hacktoberfest 22 Image">
+</div>
 
 ---
 layout: two-cols
