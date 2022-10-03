@@ -464,6 +464,15 @@ heading: Thank you for your attention!
 layout: intro
 ---
 
+# Thanks a lot to my sponsors!
+
+<img src="/sponsors.svg" class="h-70 mx-auto" alt="My GitHub sponsors">
+
+
+---
+layout: intro
+---
+
 # Slides / Repo
 
 * Slides: [https://lichter.link/vuejs-de-2022-slides/](https://lichter.link/vuejs-de-2022-slides/)
