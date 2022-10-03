@@ -112,22 +112,59 @@ import { someFunction, someOtherVariable } from 'https://unpkg.com/my-lib/dist/i
 </Code>
 
 <!--
-
-And also: Writing and maintaing these packages!
-
+And also: Writing and maintaining these packages!
 -->
 
+---
 
+# Nuxt 2 development
+
+<VClicks>
+
+* Features and functionalities were developed
+* At first coupled to the core
+* "Nuxt-related" logic -> extracted as Nuxt module
+* "General" logic -> extracted as NPM package
+
+</VClicks>
 
 ---
 
+# Why external packages?
 
-# Nuxt 2 and Nuxt 3 -> external packages
-# Why? (Easier to test, can be reused)
+<VClicks>
+
+* Decoupled from the Nuxt core
+* Easier to test
+* Can be reused throughout projects...
+* ...even in these that are not related to Nuxt
+
+</VClicks>
 
 ---
 
+# `nuxt-contrib`
 
+<img src="/nuxt-contrib.png" alt="Screenshot of the nuxt-contrib GitHub org">
+
+---
+
+# `nuxt-contrib`
+
+* Contained packages used in Nuxt or Nuxt projects
+
+<VClicks>
+
+* From `connect` middleware over testing tools to utilities
+* Evolved further to be more than just "packages from the Nuxt team"
+
+</VClicks>
+
+---
+layout: intro
+---
+
+# `unjs`
 
 ---
 
@@ -177,7 +214,6 @@ And also: Writing and maintaing these packages!
 * And be used as storage server too with ease
 
 Notes:
-* https://github.com/dishait/file-computed/ ?
 * Combine stores if wanted
 * 
 
@@ -190,6 +226,20 @@ Typically, we choose one or more data storages based on our use-cases like a fil
 💡 Unstorage solution is a unified and powerful Key-Value (KV) interface that allows combining drivers that are either built-in or can be implemented via a super simple interface and adding conventional features like mounting, watching, and working with metadata.
 
 -->
+
+---
+
+# unstorage - Used and mentioned by
+
+<VClicks>
+
+* [unstorage-pinia-plugin](https://github.com/BreizhReloaded/unstorage-pinia-plugin) - A pinia plugin to persist your store via unstorage (can be any driver)
+* [Fabian's Webperlen EP15](https://www.webundmobile.de/web/javascript/beliebige-speicherorte-2757448.html) - (German) article about unstorage - [repo](https://github.com/fdeitelhoff/w-m-fabians-web-perlen-ep15-unstorage)
+* [file-computed](https://github.com/dishait/file-computed/) - Execute functions when the content of files change
+* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
+* Also in projects [outside](https://github.com/ksmarty/advantage/tree/main) of Nuxt 3.
+
+</VClicks>
 
 ---
 
@@ -264,7 +314,7 @@ listen(app)
 
 ---
 
-# H3 - Used by
+# H3 - Used and mentioned by
 
 <VClicks>
 
@@ -285,7 +335,7 @@ listen(app)
 
 ---
 
-# Nitro - Used by
+# Nitro - Used and mentioned by
 
 <VClicks>
 
