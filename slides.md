@@ -157,15 +157,24 @@ layout: cover
 background: https://media2.giphy.com/media/DMC9w6MPUXYv9Yts49/giphy.gif
 ---
 ---
+layout: intro
+class: filter blur-md
+---
 
-# During Nuxt 2 development
+# `unjs`
+
+<img src="https://avatars.githubusercontent.com/u/80154025" class="mx-auto mt-8 w-32"  alt="Logo of unjs">
+
+---
+
+# During Nuxt 2 development...
 
 <VClicks>
 
-* Features and functionalities were introduced
+* ...more and more functionalities were introduced
 * At first - more or less coupled to the core
 * "Nuxt-related" logic -> extracted as Nuxt module
-* "General" logic -> extracted as NPM package
+* "General" logic -> extracted as standalone NPM package
 
 </VClicks>
 
@@ -177,8 +186,9 @@ background: https://media2.giphy.com/media/DMC9w6MPUXYv9Yts49/giphy.gif
 
 * Decoupled from the Nuxt core
 * Easier to test
+* Better to maintain
 * Can be reused throughout projects...
-* ...even in these that are not related to Nuxt
+* ...even in these that are not **related to Nuxt**
 
 </VClicks>
 
@@ -203,6 +213,15 @@ background: https://media2.giphy.com/media/DMC9w6MPUXYv9Yts49/giphy.gif
 
 ---
 layout: intro
+class: filter blur-md
+---
+
+# `unjs`
+
+<img src="https://avatars.githubusercontent.com/u/80154025" class="mx-auto mt-8 w-32"  alt="Logo of unjs">
+
+---
+layout: intro
 ---
 
 # `unjs`
@@ -221,7 +240,7 @@ layout: intro
 
 # Let's take a look
 
-<img v-click class="mx-auto max-w-full h-90" src="/unjs-website.png"/>
+<img v-click class="mx-auto max-w-full h-90 opacity-75" src="/unjs-website.png"/>
 
 ---
 
@@ -240,10 +259,6 @@ layout: intro
 * lowerfirst
 * splitByCase 
 
----
-
-# Defu
-
 
 ---
 
@@ -254,44 +269,7 @@ layout: intro
 * As well as in the browser and in workers!
 
 ---
-
-# 🌍💾 unstorage - Universal Storage Layer
-
-* Powerful universal storage layer
-* Unified API, < 5 kB
-* Supports in-memory, filesystem, localstorage, redis and HTTP
-* As well as GitHub repositories (read-only) and Cloudflare's KV-store via http and bindings
-* Can be extended by creating custom drivers too!
-* And be used as storage server too with ease
-
-Notes:
-* Combine stores if wanted
-* 
-
-<!-- 
-
-localforage: 28.9 kB
-
-Typically, we choose one or more data storages based on our use-cases like a filesystem, a database like Redis, Mongo, or LocalStorage for browsers but it will soon start to be lots of trouble for supporting and combining more than one or switching between them. For javascript library authors, this usually means they have to decide how many platforms they support and implement storage for each.
-
-💡 Unstorage solution is a unified and powerful Key-Value (KV) interface that allows combining drivers that are either built-in or can be implemented via a super simple interface and adding conventional features like mounting, watching, and working with metadata.
-
--->
-
----
-
-# unstorage - Used and mentioned by
-
-<VClicks>
-
-* [unstorage-pinia-plugin](https://github.com/BreizhReloaded/unstorage-pinia-plugin) - A pinia plugin to persist your store via unstorage (can be any driver)
-* [Fabian's Webperlen EP15](https://www.webundmobile.de/web/javascript/beliebige-speicherorte-2757448.html) - (German) article about unstorage - [repo](https://github.com/fdeitelhoff/w-m-fabians-web-perlen-ep15-unstorage)
-* [file-computed](https://github.com/dishait/file-computed/) - Execute functions when the content of files change
-* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
-* Also in projects [outside](https://github.com/ksmarty/advantage/tree/main) of Nuxt 3.
-
-</VClicks>
-
+layout: intro
 ---
 
 # ⚡️ H3 - Minimal h(ttp) framework
@@ -377,8 +355,47 @@ listen(app)
 
 </VClicks>
 
+---
+
+# 🌍💾 unstorage - Universal Storage Layer
+
+* Powerful universal storage layer
+* Unified API, < 5 kB
+* Supports in-memory, filesystem, localstorage, redis and HTTP
+* As well as GitHub repositories (read-only) and Cloudflare's KV-store via http and bindings
+* Can be extended by creating custom drivers too!
+* And be used as storage server too with ease
+
+Notes:
+* Combine stores if wanted
+* 
+
+<!-- 
+
+localforage: 28.9 kB
+
+Typically, we choose one or more data storages based on our use-cases like a filesystem, a database like Redis, Mongo, or LocalStorage for browsers but it will soon start to be lots of trouble for supporting and combining more than one or switching between them. For javascript library authors, this usually means they have to decide how many platforms they support and implement storage for each.
+
+💡 Unstorage solution is a unified and powerful Key-Value (KV) interface that allows combining drivers that are either built-in or can be implemented via a super simple interface and adding conventional features like mounting, watching, and working with metadata.
+
+-->
 
 ---
+
+# unstorage - Used and mentioned by
+
+<VClicks>
+
+* [unstorage-pinia-plugin](https://github.com/BreizhReloaded/unstorage-pinia-plugin) - A pinia plugin to persist your store via unstorage (can be any driver)
+* [Fabian's Webperlen EP15](https://www.webundmobile.de/web/javascript/beliebige-speicherorte-2757448.html) - (German) article about unstorage - [repo](https://github.com/fdeitelhoff/w-m-fabians-web-perlen-ep15-unstorage)
+* [file-computed](https://github.com/dishait/file-computed/) - Execute functions when the content of files change
+* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
+* Also in projects [outside](https://github.com/ksmarty/advantage/tree/main) of Nuxt 3.
+
+</VClicks>
+
+---
+
 
 # Nitro
 
@@ -432,11 +449,11 @@ listen(app)
 
 </VClicks>
 
-<div class="text-5xl text-center mt-12" v-click>
+---
+layout: intro
+---
 
-Thanks to all of them 👏🏻👏🏻👏🏻
-
-</div>
+# Thanks to all of them 👏🏻👏🏻👏🏻
 
 ---
 
@@ -455,6 +472,16 @@ Thanks to all of them 👏🏻👏🏻👏🏻
 <span class="text-3xl">Hacktoberfest 22 is on!</span>
 <img v-click class="ml-16 w-48 rounded-full" src="/hacktoberfest.jpg" alt="Hacktoberfest 22 Image">
 </div>
+
+
+---
+layout: intro
+---
+
+
+# Thanks a lot to my sponsors!
+
+<img src="/sponsors.svg" class="h-70 mx-auto" alt="My GitHub sponsors">
 
 ---
 layout: two-cols
@@ -487,14 +514,6 @@ heading: Thank you for your attention!
     @apply space-y-2 mt-10 text-xl h-full;
   }
 </style>
-
----
-layout: intro
----
-
-# Thanks a lot to my sponsors!
-
-<img src="/sponsors.svg" class="h-70 mx-auto" alt="My GitHub sponsors">
 
 ---
 layout: intro
