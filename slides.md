@@ -359,16 +359,16 @@ listen(app)
 
 # 🌍💾 unstorage - Universal Storage Layer
 
+<VClicks>
+
 * Powerful universal storage layer
 * Unified API, < 5 kB
-* Supports in-memory, filesystem, localstorage, redis and HTTP
-* As well as GitHub repositories (read-only) and Cloudflare's KV-store via http and bindings
+* Supports in-memory, filesystem, localstorage, redis and HTTP...
+* ...GitHub repositories (read-only) and Cloudflare's KV-store via http and bindings
 * Can be extended by creating custom drivers too!
-* And be used as storage server too with ease
+* Also supports being used as storage server
 
-Notes:
-* Combine stores if wanted
-* 
+</VClicks>
 
 <!-- 
 
@@ -379,6 +379,35 @@ Typically, we choose one or more data storages based on our use-cases like a fil
 💡 Unstorage solution is a unified and powerful Key-Value (KV) interface that allows combining drivers that are either built-in or can be implemented via a super simple interface and adding conventional features like mounting, watching, and working with metadata.
 
 -->
+
+---
+
+# unstorage - Example using as server
+
+```js
+import { listen } from 'listhen';
+import { createApp, createRouter } from 'h3';
+import { createStorage } from 'unstorage';
+import { createStorageServer } from 'unstorage/server';
+import fsDriver from 'unstorage/drivers/fs';
+
+const storage = createStorage({
+  driver: fsDriver({ base: './files' }),
+});
+const storageServer = createStorageServer(storage);
+
+const app = createApp();
+
+const router = createRouter()
+  .add('/storage/*', storageServer.handle)
+  .get('/', () => 'We have a file server now')
+
+app.use(router);
+
+listen(app);
+```
+
+[Here we go](https://stackblitz.com/edit/unstorage-h3-file-server-example?file=index.js,files%2Fstorage%2Ffoobar)
 
 ---
 
