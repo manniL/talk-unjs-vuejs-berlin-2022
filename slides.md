@@ -237,6 +237,15 @@ layout: intro
 <img src="https://avatars.githubusercontent.com/u/80154025" class="mx-auto mt-8 w-32"  alt="Logo of unjs">
 
 ---
+layout: intro
+---
+
+<div class="mx-auto">
+<img class="mx-auto h-100" src="/evan-you-tweet.png"  alt="Evan You tweeting: I'm excited not just about Nuxt 3 but also the amazing projects powering it under https://github.com/unjs - it's like treasure trove of great stuff.">
+<a class="text-xs" href="https://twitter.com/youyuxi/status/1438171314221617153">Source</a>
+</div>
+
+---
 
 # Let's take a look
 
@@ -372,27 +381,25 @@ listen(app)
 
 <!-- 
 
-localforage: 28.9 kB
+comparison: localforage - 28.9 kB
 
-Typically, we choose one or more data storages based on our use-cases like a filesystem, a database like Redis, Mongo, or LocalStorage for browsers but it will soon start to be lots of trouble for supporting and combining more than one or switching between them. For javascript library authors, this usually means they have to decide how many platforms they support and implement storage for each.
-
-💡 Unstorage solution is a unified and powerful Key-Value (KV) interface that allows combining drivers that are either built-in or can be implemented via a super simple interface and adding conventional features like mounting, watching, and working with metadata.
+Using lots of storages throughout applications: Commonly FS, some DBs and LocalStorage.
 
 -->
 
 ---
 
-# unstorage - Example using as server
+# unstorage - Example using as storage server
 
-```js
+```js{1-2,12,14,16,18-19|3-4,7-9|3-10|3-10,15}
 import { listen } from 'listhen';
 import { createApp, createRouter } from 'h3';
 import { createStorage } from 'unstorage';
-import { createStorageServer } from 'unstorage/server';
 import fsDriver from 'unstorage/drivers/fs';
+import { createStorageServer } from 'unstorage/server';
 
 const storage = createStorage({
-  driver: fsDriver({ base: './files' }),
+  driver: fsDriver({ base: './' }),
 });
 const storageServer = createStorageServer(storage);
 
@@ -403,7 +410,6 @@ const router = createRouter()
   .get('/', () => 'We have a file server now')
 
 app.use(router);
-
 listen(app);
 ```
 
