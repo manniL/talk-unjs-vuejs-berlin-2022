@@ -194,6 +194,10 @@ class: filter blur-md
 
 ---
 
+<img class="mx-auto" src="https://imgs.xkcd.com/comics/dependency.png" alt="xkcd about dependencies">
+
+---
+
 # `nuxt-contrib`
 
 <img src="/nuxt-contrib.png" class="opacity-75" alt="Screenshot of the nuxt-contrib GitHub org">
