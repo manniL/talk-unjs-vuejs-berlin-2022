@@ -252,30 +252,51 @@ layout: intro
 <img v-click class="mx-auto max-w-full h-90 opacity-75" src="/unjs-website.png"/>
 
 ---
+layout: intro
+---
+
+# Who has dealt with transforming URLs? ✋🏻
+
+---
+layout: intro
+---
+
+# How?
+
+---
 
 # 👽️ ufo - URL utils for humans
 
+<VClicks>
+
+* URL normalization
+* Joining and resolving URLs while keeping query and hash
+* Remove or add trailing/leading slash
+* deduplicate slashes from URLs in general
+* and way more
+
+</VClicks>
 
 ---
 
-# 🧵 scule - String case utils ?
+# ufo - Show me the code!
 
-* PascalCase
-* camelCase
-* kebab-case
-* snake-case
-* Upperfirst
-* lowerfirst
-* splitByCase 
+```js{1-3,1-4,1-5}
+import { normalizeURL, joinURL, resolveURL } from 'ufo'
 
 
----
+joinURL('/my/', 'nice', 'url/') // /my/nice/url/ 
+joinURL('/a?query=yes', '/b', '/c#hash') // /a?query=yes/b/c#hash - oh oh!
+resolveURL('/a?query=yes', '/b#someOtherHash', '/c#hash') // /a/b/c?query=yes#hash
+```
 
-# ohmyfetch
+<!--
 
-* Universal wrapper around `fetch`
-* Usable with Node (polyfill, native, or undici)
-* As well as in the browser and in workers!
+Normalize:
+* URL is properly encoded
+* preserve protocol/host (if possible)
+
+-->
 
 ---
 layout: intro
@@ -289,7 +310,7 @@ layout: intro
 
 <VClicks class="mt-16">
 
-* There are so many existing http frameworks for node.js already
+* There are so many existing http frameworks for node.js already:
 * connect
 * express
 * fastify
