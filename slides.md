@@ -387,9 +387,15 @@ listen(app)
 
 <VClicks>
 
-* [Check it out!](https://stackblitz.com/edit/h3-starter?file=package.json,index.js)
+* [Check it out!](https://stackblitz.com/edit/h3-vuejs-de-conf-2022?file=package.json,index.js)
 
 </VClicks>
+
+<!--
+
+* HMR h3
+
+-->
 
 ---
 
@@ -454,7 +460,7 @@ app.use(router);
 listen(app);
 ```
 
-[Here we go](https://stackblitz.com/edit/unstorage-h3-file-server-example?file=index.js,files%2Fstorage%2Ffoobar)
+[Here we go](https://stackblitz.com/edit/unstorage-file-server-vuejs-de-conf-2022?file=index.js)
 
 ---
 
@@ -466,12 +472,11 @@ listen(app);
 * [Fabian's Webperlen EP15](https://www.webundmobile.de/web/javascript/beliebige-speicherorte-2757448.html) - (German) article about unstorage - [repo](https://github.com/fdeitelhoff/w-m-fabians-web-perlen-ep15-unstorage)
 * [file-computed](https://github.com/dishait/file-computed/) - Execute functions when the content of files change
 * [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
-* Also in projects [outside](https://github.com/ksmarty/advantage/tree/main) of Nuxt 3.
+* Also in projects [outside](https://github.com/ksmarty/advantage/tree/main) of Nuxt 3
 
 </VClicks>
 
 ---
-
 
 # ⚗️ Nitro - Build and deploy universal JavaScript servers
 
@@ -505,6 +510,8 @@ layout: intro
 ---
 
 # Nitro - 👀
+
+## [Let's go](https://stackblitz.com/edit/unjs-vuejs-de-conf-2022)
 
 ---
 
