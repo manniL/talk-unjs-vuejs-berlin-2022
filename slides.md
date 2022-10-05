@@ -404,7 +404,7 @@ listen(app)
 <VClicks>
 
 * [Nitro(pack)](https://github.com/unjs/nitro) - We will have a look at it next!
-* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
+* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro) <logos-nuxt-icon />
 * [GestaltJS](https://github.com/gestaltjs/gestalt) - "A modern full-stack and batteries-included framework"
 * [serve](https://github.com/nmathew98/serve) - "A lightweight starting point for API applications"
 * [frourio-h3](https://github.com/SegaraRai/frourio-unofficial-h3) - An unofficial port of the full-stack TS framework
@@ -471,7 +471,7 @@ listen(app);
 * [unstorage-pinia-plugin](https://github.com/BreizhReloaded/unstorage-pinia-plugin) - A pinia plugin to persist your store via unstorage (can be any driver)
 * [Fabian's Webperlen EP15](https://www.webundmobile.de/web/javascript/beliebige-speicherorte-2757448.html) - (German) article about unstorage - [repo](https://github.com/fdeitelhoff/w-m-fabians-web-perlen-ep15-unstorage)
 * [file-computed](https://github.com/dishait/file-computed/) - Execute functions when the content of files change
-* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro)
+* [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/) (via Nitro) <logos-nuxt-icon />
 * Also in projects [outside](https://github.com/ksmarty/advantage/tree/main) of Nuxt 3
 
 </VClicks>
@@ -520,7 +520,7 @@ layout: intro
 <VClicks>
 
 * [Nuxt 3](https://github.com/nuxt/framework) and [Nuxt Bridge](https://github.com/nuxt/bridge/)
-  * and any project built with Nuxt 3
+  * and any project built with Nuxt 3 <logos-nuxt-icon />
 * [stacks.js](https://github.com/stacksjs/stacks) - "A progressive, atomic full-stack framework"
 * [vitejs/rfcs-bot](https://github.com/vitejs/rfcs-bot) - "Automation of RFCs creation for vitejs/rfcs"
 * [issues-up](https://github.com/antfu/issue-up/tree/main) - "Mirror issues to the upstream repos"
