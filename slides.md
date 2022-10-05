@@ -575,7 +575,11 @@ layout: intro
 layout: intro
 ---
 
+<div class="flex items-center justify-center h-80">
+
 # Thanks to all of them 👏🏻👏🏻👏🏻
+
+</div>
 
 ---
 
