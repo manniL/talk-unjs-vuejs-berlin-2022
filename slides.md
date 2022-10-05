@@ -277,19 +277,6 @@ layout: intro
 
 </VClicks>
 
----
-
-# ufo - Show me the code!
-
-```js{1-3,1-4,1-5}
-import { normalizeURL, joinURL, resolveURL } from 'ufo'
-
-
-joinURL('/my/', 'nice', 'url/') // /my/nice/url/ 
-joinURL('/a?query=yes', '/b', '/c#hash') // /a?query=yes/b/c#hash - oh oh!
-resolveURL('/a?query=yes', '/b#someOtherHash', '/c#hash') // /a/b/c?query=yes#hash
-```
-
 <!--
 
 Normalize:
@@ -297,6 +284,39 @@ Normalize:
 * preserve protocol/host (if possible)
 
 -->
+
+---
+
+# ufo - Show me the code!
+
+```js {0|1-3|1-4|1-5|all}
+import { joinURL } from 'ufo'
+
+joinURL('/my/', 'nice', 'url/')
+// Will yield: /my/nice/url/ 
+joinURL('/a?query=yes', '/b', '/c#hash')
+// ???
+
+```
+
+---
+
+# ufo - Show me the code!
+
+```js{1-6|1-7|1-8|1-9|1-10|1-11|all}
+import { joinURL, resolveURL, cleanDoubleSlashes, parseURL } from 'ufo'
+
+joinURL('/my/', 'nice', 'url/')
+// Will yield: /my/nice/url/ 
+joinURL('/a?query=yes', '/b', '/c#hash')
+// /a?query=yes/b/c#hash - oh oh!
+resolveURL('/a?query=yes', '/b#someOtherHash', '/c#hash')
+// /a/b/c?query=yes#hash
+cleanDoubleSlashes('https://conf.vuejs.de////schedule//')
+// https://conf.vuejs.de/schedule/
+parseURL('/unstorage-h3-file-server-example?file=index.js')
+// { "pathname": "/unstorage-h3-file-server-example", "search": "?file=index.js", "hash": "" }
+```
 
 ---
 layout: intro
@@ -453,9 +473,38 @@ listen(app);
 ---
 
 
-# Nitro
+# ⚗️ Nitro - Build and deploy universal JavaScript servers
 
-* TODO
+<VClicks>
+
+* Toolchain and runtime framework at once
+* Comes with HMR out of the box
+* Supports various route rules (see Daniel's talk! 👀)
+* Customizable, configurable and extendable
+* Uses lots of `unjs` packages (e.g. `h3`, `unstorage` and `ufo`)
+
+</VClicks>
+
+---
+layout: intro
+---
+
+# Deploy a JS server to **any provider**
+
+## without changing the codebase (at most, config)
+
+<style>
+  h1 {
+    @apply !text-5xl;
+  }
+  h2 {
+    @apply !text-2xl;
+  }
+</style>
+
+---
+
+# Nitro - 👀
 
 ---
 
